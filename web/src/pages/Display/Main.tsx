@@ -9,7 +9,11 @@ const Main = () => {
       <div className="content">
         <header>
           <img src={Logo} alt="HearthStone" />
-        </header>      
+        </header>  
+
+        <main>
+          <h1>Maintenance screen for charts and data storage in the browser</h1>
+        </main>    
       </div>
     </div>  
   )
