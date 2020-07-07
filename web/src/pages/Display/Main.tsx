@@ -13,10 +13,13 @@ const Main = () => {
 
         <main>
           <h1>Maintenance screen for charts and data storage in the browser</h1>
+            <div className="box">
+              <h1>Container</h1>
+            </div>
         </main>    
       </div>
     </div>  
-  )
+  );
 }
 
 export default Main;
