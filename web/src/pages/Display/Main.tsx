@@ -9,15 +9,20 @@ const Main = () => {
       <div className="content">
         <header>
           <img src={Logo} alt="HearthStone" />
-        </header>  
+        </header>
 
         <main>
-          
-            <div className="box">
-            </div>
-        </main>    
+          <div className="box">
+            <section className="memory-game">
+              <div className="memory-card">
+                {/*<img className="front-face" src="img/react.svg" alt="React"/>
+                <img className="back-face" src="img/js-badge.svg" alt="Memory Card"/>/*
+  */}         </div>
+            </section>
+          </div>
+        </main>
       </div>
-    </div>  
+    </div>
   );
 }
 
