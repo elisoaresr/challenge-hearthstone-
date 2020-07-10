@@ -13,12 +13,28 @@ const Main = () => {
 
         <main>
           <div className="box">
-            <section className="memory-game">
-              <div className="memory-card">
-                {/*<img className="front-face" src="img/react.svg" alt="React"/>
-                <img className="back-face" src="img/js-badge.svg" alt="Memory Card"/>/*
-  */}         </div>
-            </section>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Username</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Name data</td>
+                  <td>Username data</td>
+                  <td>
+                    <button className="button muted-button">Editar</button>
+                    <button className="button muted-button">Delet</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="game">
+                1
+            </div>
           </div>
         </main>
       </div>
