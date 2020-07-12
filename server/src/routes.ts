@@ -6,6 +6,5 @@ routes.get('/', (request, response) => {
   return response.json({ message: 'Tema Application' });
 });
 
-
 export default routes;
 
