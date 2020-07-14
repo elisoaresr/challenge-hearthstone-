@@ -1,4 +1,4 @@
-## Como rodar o projeto:
+## Instruções para compilar a aplicação:
 
 No diretório do projeto, você pode executar:
 

@@ -4,6 +4,6 @@ import React from 'react'
 export default props =>
     <footer className="footer">
         <span>
-            Desenvolvido por Eliezer Soares
+            Challenge Tema Sistemas - 2020
         </span>
     </footer>
