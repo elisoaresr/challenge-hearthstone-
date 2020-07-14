@@ -3,12 +3,12 @@ import axios from 'axios'
 import Main from '../template/Main'
 
 const headerProps = {
-    icon: 'users',
+    icon: 'cogs',
     title: 'Cartas',
     subtitle: 'Tela de manutenção para cartas'
 }
 
-const baseUrl = 'http://localhost:3001/cards'
+const baseUrl = 'http://localhost:3333/cards'
 const initialState = {
     card: { name: '', description: '', attack: '', defense: '', sort: '', group: '' },
     list: []
@@ -109,6 +109,8 @@ export default class UserCrud extends Component {
                                 value={this.state.card.sort}
                                 onChange={e => this.updateField(e)}>
                                 <option value="0">Selecione a classe</option>
+                                <option value="1">Magia</option>
+                                <option value="2">Criatura</option>
                             </select>
 
                         </div>
@@ -117,16 +119,18 @@ export default class UserCrud extends Component {
                     <div className="col-12 col-md-6">
                         <div className="form-group">
                             <label>Tipo</label>
-                            <select type="enum" className="form-control"
-                                name="type"
+                            <select type="text" className="form-control"
+                                name="group"
                                 value={this.state.card.group}
                                 onChange={e => this.updateField(e)}>
                                 <option value="0">Selecione o tipo</option>
+                                <option value="1">Mago</option>
+                                <option value="2">Paladino</option>
+                                <option value="3">Caçador</option>
+                                <option value="4">Druida</option>
                             </select>
-
                         </div>
                     </div>
-
                 </div>
 
                 <hr />
@@ -160,12 +164,14 @@ export default class UserCrud extends Component {
 
     renderTable() {
         return (
-            <table className="table mt-4">
+            <table className="table mt-6">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Descrição</th>
+                        <th>Ataque</th>
+                        <th>Defesa</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -182,7 +188,9 @@ export default class UserCrud extends Component {
                 <tr key={card.id}>
                     <td>{card.id}</td>
                     <td>{card.name}</td>
-                    <td>{card.email}</td>
+                    <td>{card.description}</td>
+                    <td>{card.attack}</td>
+                    <td>{card.defense}</td>
                     <td>
                         <button className="btn btn-warning"
                             onClick={() => this.load(card)}>

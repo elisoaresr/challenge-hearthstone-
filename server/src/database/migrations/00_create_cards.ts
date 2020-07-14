@@ -8,7 +8,7 @@ export async function up(knex: Knex) {
     table.integer('attack').notNullable();
     table.integer('defense').notNullable();
     table.enum('sort', ['Magia', 'Criatura']).notNullable();
-    table.enum('group', ['Mago', 'Paladino', 'Caçador', 'Mago']).notNullable();
+    table.enum('group', ['Mago', 'Paladino', 'Caçador', 'Guerreiro']).notNullable();
   });
 }
 

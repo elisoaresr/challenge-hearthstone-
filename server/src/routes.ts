@@ -1,10 +1,12 @@
-import express from 'express'
+import express from 'express';
 import knex from './database/connection';
 
 const routes = express.Router()
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Tema Application' });
+routes.get('/cards', async (request, response) => {
+  const cards = await knex('cards').select('*');
+  
+  return response.json(cards);
 });
 
 routes.post('/cards', async (request, response) => {

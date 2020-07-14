@@ -8,8 +8,8 @@ export default props =>
             <Link to="/">
                 <i className="fa fa-home"></i> Início
             </Link>
-            <Link to="/users">
-                <i className="fa fa-id-card-o"></i> Cartas
+            <Link to="/cards">
+                <i className="fa fa-cogs"></i> Cartas
             </Link>
         </nav>
     </aside>
