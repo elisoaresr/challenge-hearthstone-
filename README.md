@@ -1,11 +1,17 @@
-## Available Scripts
+## Como rodar o projeto:
 
-In the project directory, you can run:
+No diretório do projeto, você pode executar:
+
+### `npm i ou install`
+Para fazer o download das dependências utilizadas no projeto. <br />
+O comando deve ser rodado tanto dentro do diretório "server" quanto <br /> na "web".
+
+Após o download das dependências rodar:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o aplicativo no modo de desenvolvimento. <br />
+Abra [http://localhost:3000] (para visualizá-lo no navegador.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+
+
