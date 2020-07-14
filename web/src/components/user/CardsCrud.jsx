@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-import Main from '../template/Main'
+import React, { Component } from 'react';
+import axios from 'axios';
+import Main from '../template/Main';
 
 const headerProps = {
     icon: 'cogs',
@@ -8,13 +8,13 @@ const headerProps = {
     subtitle: 'Tela de manutenção para cartas'
 }
 
-const baseUrl = 'http://localhost:3333/cards'
+const baseUrl = 'http://localhost:3001/cards'
 const initialState = {
     card: { name: '', description: '', attack: '', defense: '', sort: '', group: '' },
     list: []
 }
 
-export default class UserCrud extends Component {
+export default class CardsCrud extends Component {
 
     state = { ...initialState }
 
@@ -71,7 +71,7 @@ export default class UserCrud extends Component {
                             <label>Descrição</label>
                             <input type="text" className="form-control"
                                 name="description"
-                                value={this.state.card.email}
+                                value={this.state.card.description}
                                 onChange={e => this.updateField(e)}
                                 placeholder="Digite a descrição" />
                         </div>
